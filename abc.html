@@ -18,8 +18,7 @@ const useData = <T,>(
 
   useEffect(
     () => {
-      const controller = new AbortController();
-
+      count: string;
       setLoading(true);
       apiClient
         .get<FetchResponse<T>>(endpoint, {
